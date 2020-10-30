@@ -1,27 +1,56 @@
-# AngularSession
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
+# A front-end practical session with Angular and Interacto
 
-## Development server
+## First step: installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Clone the project
 
-## Code scaffolding
+- Run `npm install` in the project folder to install the dependencies
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Open the project with your IDE (eg Webstorm) to run the app (`Angular CLI Server`).
+You can run the app in command line using `ng serve`
 
-## Build
+- Open the documentation I provided on Angular (cf Moodle)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Show text
 
-## Running unit tests
+- Open `c1.component.ts` and `c1.component.css` (I created this component using the command `ng generate component component/c1`).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Note that a service `DataService` is injected through the constructor of `C1Component`. This service is located in `service/data.service.ts`.
+I generated it using the command ` ng generate service service/data`.
 
-## Running end-to-end tests
+- Using data binding, bind the `text` property of the `DataService` instance to the `TextArea` widget (do that in the HTML file).
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Clear text (not undoable) 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Now we want to clear the text of this `TextArea` widget by clicking on a button.
+We will do that using two techniques.
+
+- **Using the Web native API** by clicking on the button 'Clear text (v1)'. See: 
+You need to:
+    - add an identifier to the concerned button (`#b1`)
+    - add an attribute in the component class to refer to this identifier (slide 35, use the `ElementRef` attribute, not the `QueryList` one)
+    - in the component method `ngAfterViewInit`, add to `b1` an event handler to process each button click. See the example at the bottom of the following page:
+    https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event
+    
+    
+
+- **Using the Angular native API** by clicking on the button 'Clear text (v2)'. See: https://angular.io/guide/user-input
+You need to:
+    - use the `(click)` directive
+    - define a method in the component that will be called on each button click
+    - set the text of the `TextArea` to '' ()
+
+
+
+- **Using the Interacto library** by clicking on the button 'Clear text (v3)'. See: https://interacto.github.io/
+You need to: 
+    - add an identifier to the concerned button (`#b2`)
+    - add an attribute in the component class to refer to this identifier (slide 35)
+    - write in the component method `ngAfterViewInit` an Interacto button binder. See:
+    This binder can use the predefined `AnonCmd`.
+
+## Clear text (undoable) 
+
+
