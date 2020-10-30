@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, OnInit} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
 import {DataService} from '../../service/data.service';
 
 @Component({
@@ -7,6 +7,10 @@ import {DataService} from '../../service/data.service';
   styleUrls: ['./c1.component.css']
 })
 export class C1Component implements AfterViewInit {
+  @ViewChild('undo')
+  undo: ElementRef<HTMLButtonElement>;
+  @ViewChild('redo')
+  redo: ElementRef<HTMLButtonElement>;
 
   constructor(public dataService: DataService) {
   }
