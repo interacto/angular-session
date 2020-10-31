@@ -33,7 +33,7 @@ Before starting, note that:
 
 <br/>
 
-- **Using the Web native API** by clicking on the button 'Clear text (v1)'. See: 
+- **Using the Web native API** by clicking on the button `Clear text #1`. See: 
 You need to:
     - add an identifier to the concerned button (`#b1`)
     - add an attribute in the component class to refer to this identifier (slide 35, use the `ElementRef` attribute, not the `QueryList` one)
@@ -43,7 +43,7 @@ You need to:
     
   <br/>  
 
-- **Using the Angular native API** by clicking on the button 'Clear text (v2)'. See: https://angular.io/guide/user-input
+- **Using the Angular native API** by clicking on the button `Clear text #2`. See: https://angular.io/guide/user-input
 You need to:
     - use the `(click)` directive
     - define a method in the component that will be called on each button click
@@ -51,9 +51,9 @@ You need to:
 
 <br/>
 
-- **Using the Interacto library** by clicking on the button 'Clear text (v3)'. See: https://interacto.github.io/
+- **Using the Interacto library** by clicking on the button `Clear text #3`. See: https://interacto.github.io/
 You need to: 
-    - add an identifier to the concerned button (`#b2`)
+    - add an identifier to the concerned button (`#b3`)
     - add an attribute in the component class to refer to this identifier (slide 35)
     - write in the component method `ngAfterViewInit` an Interacto button binder. 
     On: https://interacto.github.io/ click on the `How to start` button to have an example. 
@@ -78,4 +78,32 @@ To remove from an array an element at a given index: `this.myarray.splice(index,
 Look at this example *How to start* on : https://interacto.github.io/
 
 
-## Timeout
+## Long pressure (not undoable)
+
+A long pressure (or long touch when using a touch device) consists in pressing a mouse button during a minimal duration.
+After this duration an action is executed.
+A mouse release before this delay does not permit the action execution.
+We will work on a long pressure of 1 second.
+
+- **Implement using the native Web API** (`addEventListener`) a long press interaction (1 second) on the button `Clear text #4` to clear the text data.
+To write such a user interaction from scratch you have to use the `setTimeout` and `clearTimeout` functions.
+For example: 
+
+```ts
+let timeout;
+timeout = setTimeout(() => {
+    console.log('foo');
+}, 1000);
+```
+
+This code launches a timeout of 1000 ms. After this delay the anonymous function given as argument is executed.
+
+Note that `setTimeout` returns an object.
+You can use this timeout object to stop it using the `clearTimeout` function like this: `clearTimeout(timeout)`
+
+Other elements to help in this exercise for processing mouse events:
+if `'click'` refers to a mouse button click event, `'mousedown'` and `'mouseup'` respectively refer to a mouse button pressure and a mouse button release.
+
+<br/>
+
+- **Implement using Interacto** a long press interaction (1 second) on the button ``Clear text #5` to clear the text data.
