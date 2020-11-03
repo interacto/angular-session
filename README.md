@@ -107,3 +107,23 @@ if `'click'` refers to a mouse button click event, `'mousedown'` and `'mouseup'`
 <br/>
 
 - **Implement using Interacto** a long press interaction (1 second) on the button ``Clear text #5` to clear the text data.
+
+
+# Create a new component
+
+In your command line (in the project folder), type: `ng generate component component/c2`
+<br/>
+
+This command will generate another Angular component `C2Component`.
+<br/>
+To add an Angular route to access this new component, open the file `app-routing.module.ts` 
+and uncomment the line `{ path: 'c2', component: C2Component }`.
+
+In your browser, change the url of the app from `http://localhost:4200/c1` to `http://localhost:4200/c2`<br/>
+Note that this loads the component `C2Component`.
+<br/><br/>
+
+We now want to add this route in the list of routes.<br/>
+Open app.component.html and uncomment the commented line.<br/>
+You can now switch between the two components.
+
