@@ -1,9 +1,9 @@
 
 <nav>
   <ul>
-    <li><a routerLink="/c1" routerLinkActive="active">First Component</a></li>
-<!--    <li><a routerLink="/c2" routerLinkActive="active">Second Component</a></li>-->
+    <li><a routerLink="/c1">First Component</a></li>
+<!--    <li><a routerLink="/c2">Second Component</a></li>-->
   </ul>
 </nav>
 
-<router-outlet></router-outlet>
+<router-outlet *ngIf="router.url !== '/'"></router-outlet>
