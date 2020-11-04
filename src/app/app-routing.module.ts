@@ -1,13 +1,15 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import {C1Component} from './component/c1/c1.component';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
 import {AppComponent} from './app.component';
+import {Tp1Component} from './component/tp1/tp1.component';
+import {Tp2Component} from './component/tp2/tp2.component';
 
 
 const routes: Routes = [
   { path: '', component: AppComponent },
-  { path: 'c1', component: C1Component },
-  // { path: 'c2', component: C2Component },
+  { path: 'tp1', component: Tp1Component },
+  { path: 'tp2', component: Tp2Component },
+  // { path: 'comp', component: CompComponent },
   { path: '',
     redirectTo: '/', // auto redirect to /c1
     pathMatch: 'full'

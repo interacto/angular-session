@@ -8,15 +8,21 @@
 - Run `npm install` in the project folder to install the dependencies
 
 - Open the project with your IDE (eg Webstorm) to run the app (`Angular CLI Server`).
-You can run the app in command line using `ng serve`
+You can run the app in command line using `ng serve`.
+
+- Open the app in your browser at the URL provided in the Angular console:
+http://localhost:4200/ <br/>
+This practical session focuses on `First practical session`.
 
 - Open the documentation I provided on Angular (cf Moodle)
 
+
 ## Show text
 
-- Open `c1.component.ts` and `c1.component.css` (I created this component using the command `ng generate component component/c1`).
+- Open `tp1.component.ts` and `tp1.component.css` (I created this component using the command 
+`ng generate component component/tp1`) in `src/app/component/tp1`.
 
-- Note that a service `DataService` is injected through the constructor of `C1Component`. This service is located in `service/data.service.ts`.
+- Note that a service `DataService` is injected through the constructor of `Tp1Component`. This service is located in `src/app/service/data.service.ts`.
 I generated it using the command ` ng generate service service/data`.
 
 - Using data binding, bind the `text` property of the `DataService` instance to the `TextArea` widget (do that in the HTML file).
