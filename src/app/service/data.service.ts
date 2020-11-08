@@ -5,12 +5,25 @@ import { Injectable } from '@angular/core';
 })
 export class DataService {
   text: string;
+  color: string;
+  position: Position;
 
   constructor() {
-    this.text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ' +
-      'labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ' +
-      'aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore ' +
-      'eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt ' +
-      'mollit anim id est laborum.';
+    this.text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
+    this.color = '#929292';
+    this.position = {
+      x: 20,
+      y: 10
+    };
   }
+
+  setNewRandomColor(): void {
+    // tslint:disable-next-line:no-bitwise
+    this.color = '#' + (Math.random() * 0xFFFFFF << 0).toString(16);
+  }
+}
+
+export interface Position {
+  x: number;
+  y: number;
 }

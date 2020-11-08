@@ -1,1 +1,27 @@
-<p>tp2 works!</p>
+
+<div class="main">
+    <div >
+        <button>Undo</button>
+        <button>Redo</button>
+    </div>
+
+    <hr/>
+
+    <br/>
+
+    <div id="triple" class="main rect" [ngStyle]="{'background-color': dataService.color}">Triple click on me to change the background color</div>
+
+    <hr/>
+    <br/>
+
+    <div><textarea class="txt">{{dataService.text}}</textarea><p>{{dataService.text}}</p></div>
+
+    <br/>
+    <hr/>
+
+    <svg class="svgdoc" width="800" height="300" style="border:1px solid black;" >
+        <rect id="rec"
+              [attr.x]="dataService.position.x" [attr.y]="dataService.position.y"
+              width="100" height="50" stroke="black"></rect>
+    </svg>
+</div>
