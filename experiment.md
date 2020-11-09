@@ -9,10 +9,16 @@ Procedure:
 
 - you should know, from your supervisor, if you have to use either the Web/Angular API or Interacto to do the three following exercises
 
-- clone the project
+- clone the project and run `npm install` in the project folder to install the dependencies
+
 
 - run the Angular app (run `Angular CLI Server`).
 This session focuses on the page http://localhost:4200/tp2
+
+
+- Open the documentation we provided on Angular (https://moodleng.insa-rennes.fr/pluginfile.php/19085/mod_resource/content/6/helpAngular.pdf) 
+and on Interacto (https://interacto.github.io/) 
+
 
 - Do the three exercises using either the Web/Angular API or Interacto.<br/>
 Do not forget to commit locally your changes after each question (do not forget to add new files to git, if you created new files).
