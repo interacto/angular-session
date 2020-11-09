@@ -1,8 +1,10 @@
 
-# Practical Session #2: an experiment Web/Angular API / Interacto
+# Practical Session #2: an experiment Web/Angular API vs Interacto
 
 Procedure:
 - Answer in this file the two following questions:
+    - What is, according to you, your expertise level in programming, between 1 and 10 (1 lowest, 10 highest expertise): 
+
     - What is, according to you, your expertise level in Angular, between 1 and 10 (1 lowest, 10 highest expertise):
     
     - What is, according to you, your expertise level in Web front-end, between 1 and 10 (1 lowest, 10 highest expertise):  
@@ -30,17 +32,12 @@ There is no need to write tests.<br/>
 As a reminder, in Angular you can create new class using this command: 
 `ng generate class classname`
 
-- you have a delay for each exercise (written in each exercise).<br/>
-Do not forgot to commit files even if the delay expired.<br/>
-You can switch to the next exercise before the delay, but notify the supervisor.
-
-
-- At the end of the session, you can write here your feelings, some feedback about the exercises and the framework you used:
-
+- you have a deadline/time limit for each exercise (written in each exercise).<br/>
+Do not forgot to commit files even if the time limit expired.<br/>
+You can switch to the next exercise before the time limit, but notify the supervisor.
 
 - At the end of the session, delete the folder `node_modules`,  put a zipped file of the project folder on moodle: https://moodleng.insa-rennes.fr/mod/assign/view.php?id=18007 <br/>
 Make sure the archive contains the hidden folder `.git`.
-
 
 - You can ask the supervisor for clarifications
 
@@ -65,6 +62,12 @@ Commit locally your code to keep the changes in this history with the message `1
 **Question 2** Adapt your code to be able to undo/redo color changes. 
 Commit locally your code to keep the changes in this history with the message `1 q2` (do not forget to add new files to git, if you created new files).
 
+**Feedback**
+From 1 to 10 (10 being the most difficult), give the difficulty of each question:
+ - Q1:
+ - Q2:
+
+
 <br/>
 
 ## #2 -- Write text
@@ -80,6 +83,9 @@ You have 20 minutes max for this exercise.
 
 **Question 1** Implement this feature without considering undo/redo.
 Commit locally your code to keep the changes in this history with the message `2 q1` (do not forget to add new files to git, if you created new files).
+
+**Feedback**
+From 1 to 10 (10 being the most difficult), give the difficulty of the question:
 
 
 <br/>
@@ -104,3 +110,16 @@ are defined by `dataService.position`.
 
 **Question 2** Adapt your code to be able to undo/redo the moves. 
 Commit locally your code to keep the changes in this history with the message `3 q2` (do not forget to add new files to git, if you created new files).
+
+**Feedback**
+From 1 to 10 (10 being the most difficult), give the difficulty of each question:
+ - Q1:
+ - Q2:
+
+
+## Feedback
+
+You can write here your feelings, some feedback about the exercises and the framework you used:
+
+
+
