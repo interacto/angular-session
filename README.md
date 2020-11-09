@@ -14,7 +14,8 @@ You can run the app in command line using `ng serve`.
 http://localhost:4200/ <br/>
 This practical session focuses on `First practical session`.
 
-- Open the documentation I provided on Angular (cf Moodle)
+- Open the documentation we provided on Angular (https://moodleng.insa-rennes.fr/pluginfile.php/19085/mod_resource/content/6/helpAngular.pdf) 
+and on Interacto (https://interacto.github.io/) 
 
 
 ## Show text
