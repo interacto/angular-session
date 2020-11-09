@@ -28,6 +28,10 @@ As a reminder, in Angular you can create new class using this command:
 Do not forgot to commit files even if the delay expired.<br/>
 You can switch to the next exercise before the delay, but notify the supervisor.
 
+
+- At the end of the session, you can write here your feelings, some feedback about the exercises and the framework you used:
+
+
 - At the end of the session, delete the folder `node_modules`,  put a zipped file of the project folder on moodle: https://moodleng.insa-rennes.fr/mod/assign/view.php?id=18007 <br/>
 Make sure the archive contains the hidden folder `.git`.
 
