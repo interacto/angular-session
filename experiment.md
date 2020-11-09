@@ -1,19 +1,30 @@
 
 # Practical Session #2
 
+Procedure:
+- you should know, from your instructor, if you have to use either the Web/Angular API or Interacto in the three following exercises
+
+- take the project of the session #1 or re-clone the project
+
+- read the following introduction
+
+- run the Angular app (run `Angular CLI Server`).
 This session focuses on the page http://localhost:4200/tp2
 
+- Do the three exercises using either the Web/Angular API or Interacto.
+Do not forget to commit locally your changes after each question (do not forget to add new files to git, if you created new files).
+Several questions may compose each exercise.
 The code to edit is located in `src/app/component/tp2`.
 
-This session contains of three exercises.
-You have to do them using either the Web/Angular API **or** Interacto.
-Ask your instructor to be sure.
-Several questions may compose each exercise.
-You have to commit the changes at the end of each question.
-Do not forget to add new files to git, if you created new files.
+- you have 30 minute max per exercise. The instructor will notify you about the delay.
+Do not forgot to commit files even if the delay expired.
+You can switch to the next exercise before the delay, but notify the instructor.
 
-You can modify `ts`, `html`, or `css` files of the component `tp2`.
-You can also modify `data.service.ts`.
+- Put a zipped file of your folder `src` on moodle: https://moodleng.insa-rennes.fr/mod/assign/view.php?id=18007
+
+
+You can modify `ts`, `html`, or `css` files of the component `src/app/component/tp2`.
+You can also modify `src/app/service/data.service.ts`.
 There is no need to write tests.
 
 As a reminder, in Angular you can create new class using this command: 
@@ -28,14 +39,14 @@ The background color of this `triple` div element uses `dataService.color` so th
 The class `DataService` already provides a method `setNewRandomColor` to set its `color` attribute with a new random value.
 
 **Question 1** Implement this feature without considering undo/redo.
-Commit your code to keep the changes in this history with the message `1 q1` (do not forget to add new files to git, if you created new files).
+Commit locally your code to keep the changes in this history with the message `1 q1` (do not forget to add new files to git, if you created new files).
 
 - Note for those who have to use the Web/Angular API: a mouse event has an attribute `detail` that refers to the number of clicks.
 - Note for those who have to use Interacto: `clicksBinder(nb)` refers to an N-click interaction.
 
 
 **Question 2** Adapt your code to be able to undo/redo color changes. 
-Commit your code to keep the changes in this history with the message `1 q2` (do not forget to add new files to git, if you created new files).
+Commit locally your code to keep the changes in this history with the message `1 q2` (do not forget to add new files to git, if you created new files).
 
 <br/>
 
@@ -49,7 +60,7 @@ For example: the user writes a sequence of words and then stops for more than 1 
 This is a mainstream optimisation that implement in many coding or text processing tools to limit the number of editing actions. 
 
 **Question 1** Implement this feature without considering undo/redo.
-Commit your code to keep the changes in this history with the message `2 q1` (do not forget to add new files to git, if you created new files).
+Commit locally your code to keep the changes in this history with the message `2 q1` (do not forget to add new files to git, if you created new files).
 
 
 <br/>
@@ -62,7 +73,7 @@ Press on the rectangle, drag it to a location, and release it to end its transla
 The rectangle to move is the rectangle `rec` defined in the HTML file.
 
 **Question 1** Implement this feature without considering undo/redo.
-Commit your code to keep the changes in this history with the message `3 q1` (do not forget to add new files to git, if you created new files).
+Commit locally your code to keep the changes in this history with the message `3 q1` (do not forget to add new files to git, if you created new files).
 
 - Note for those who have to use the Web/Angular API: you can use https://v7.material.angular.io/cdk/drag-drop/overview#getting-started
 or use the classical `mousedown`, `mouseup`, `mousemove` event listeners.
@@ -71,4 +82,4 @@ are defined by `dataService.position`.
 
 
 **Question 2** Adapt your code to be able to undo/redo the moves. 
-Commit your code to keep the changes in this history with the message `3 q2` (do not forget to add new files to git, if you created new files).
+Commit locally your code to keep the changes in this history with the message `3 q2` (do not forget to add new files to git, if you created new files).
