@@ -2,7 +2,12 @@
 # Practical Session #2: an experiment Web/Angular API / Interacto
 
 Procedure:
-- you should know, from your instructor, if you have to use either the Web/Angular API or Interacto to do the three following exercises
+- Answer in this file the two following questions:
+    - What is, according to you, your expertise level in Angular, between 1 and 10 (1 lowest, 10 highest expertise):
+    
+    - What is, according to you, your expertise level in Web front-end, between 1 and 10 (1 lowest, 10 highest expertise):  
+
+- you should know, from your supervisor, if you have to use either the Web/Angular API or Interacto to do the three following exercises
 
 - clone the project
 
@@ -21,13 +26,13 @@ As a reminder, in Angular you can create new class using this command:
 
 - you have a delay for each exercise (written in each exercise).<br/>
 Do not forgot to commit files even if the delay expired.<br/>
-You can switch to the next exercise before the delay, but notify the instructor.
+You can switch to the next exercise before the delay, but notify the supervisor.
 
 - At the end of the session, delete the folder `node_modules`,  put a zipped file of the project folder on moodle: https://moodleng.insa-rennes.fr/mod/assign/view.php?id=18007 <br/>
 Make sure the archive contains the hidden folder `.git`.
 
 
-- You can ask the instructor for clarifications
+- You can ask the supervisor for clarifications
 
 
 
