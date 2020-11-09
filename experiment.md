@@ -1,34 +1,34 @@
 
-# Practical Session #2
+# Practical Session #2: an experiment Web/Angular API / Interacto
 
 Procedure:
-- you should know, from your instructor, if you have to use either the Web/Angular API or Interacto in the three following exercises
+- you should know, from your instructor, if you have to use either the Web/Angular API or Interacto to do the three following exercises
 
-- take the project of the session #1 or re-clone the project
-
-- read the following introduction
+- clone the project
 
 - run the Angular app (run `Angular CLI Server`).
 This session focuses on the page http://localhost:4200/tp2
 
-- Do the three exercises using either the Web/Angular API or Interacto.
+- Do the three exercises using either the Web/Angular API or Interacto.<br/>
 Do not forget to commit locally your changes after each question (do not forget to add new files to git, if you created new files).
-Several questions may compose each exercise.
+Several questions may compose each exercise.<br/>
 The code to edit is located in `src/app/component/tp2`.
-
-- you have 30 minute max per exercise. The instructor will notify you about the delay.
-Do not forgot to commit files even if the delay expired.
-You can switch to the next exercise before the delay, but notify the instructor.
-
-- Put a zipped file of your folder `src` on moodle: https://moodleng.insa-rennes.fr/mod/assign/view.php?id=18007
-
-
-You can modify `ts`, `html`, or `css` files of the component `src/app/component/tp2`.
+You can modify `ts`, `html`, or `css` files of this component.
 You can also modify `src/app/service/data.service.ts`.
-There is no need to write tests.
-
+There is no need to write tests.<br/>
 As a reminder, in Angular you can create new class using this command: 
 `ng generate class classname`
+
+- you have a delay for each exercise (written in each exercise).<br/>
+Do not forgot to commit files even if the delay expired.<br/>
+You can switch to the next exercise before the delay, but notify the instructor.
+
+- At the end of the session, delete the folder `node_modules`,  put a zipped file of the project folder on moodle: https://moodleng.insa-rennes.fr/mod/assign/view.php?id=18007 <br/>
+Make sure the archive contains the hidden folder `.git`.
+
+
+- You can ask the instructor for clarifications
+
 
 
 ## #1 -- Triple click to change a color
@@ -37,6 +37,8 @@ A triple-click on the div element `triple` (located in the HTML file) must chang
 The background color of this `triple` div element uses `dataService.color` so that you should be able to see the change.
 
 The class `DataService` already provides a method `setNewRandomColor` to set its `color` attribute with a new random value.
+
+You have 30 minutes max for this exercise. 
 
 **Question 1** Implement this feature without considering undo/redo.
 Commit locally your code to keep the changes in this history with the message `1 q1` (do not forget to add new files to git, if you created new files).
@@ -55,9 +57,11 @@ Commit locally your code to keep the changes in this history with the message `1
 Editing the text of the `textarea` HTML element must change `dataService.text`.
 
 A precision: do this action when the textarea is idle for 1 second.
-For example: the user writes a sequence of words and then stops for more than 1 second, so that `dataService.text` is updated.
+For example: the user writes a sequence of letters and then stops for more than 1 second, so that `dataService.text` is updated.
 
-This is a mainstream optimisation that implement in many coding or text processing tools to limit the number of editing actions. 
+This is a mainstream optimisation that implement many code/text processing tools to limit the number of editing actions. 
+
+You have 20 minutes max for this exercise. 
 
 **Question 1** Implement this feature without considering undo/redo.
 Commit locally your code to keep the changes in this history with the message `2 q1` (do not forget to add new files to git, if you created new files).
@@ -71,6 +75,8 @@ The last exercise consists in moving a rectangle using a drag-and-drop interacti
 Press on the rectangle, drag it to a location, and release it to end its translation. 
 
 The rectangle to move is the rectangle `rec` defined in the HTML file.
+
+You have 35 minutes max for this exercise. 
 
 **Question 1** Implement this feature without considering undo/redo.
 Commit locally your code to keep the changes in this history with the message `3 q1` (do not forget to add new files to git, if you created new files).
