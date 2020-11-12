@@ -64,7 +64,7 @@ You need to:
     - add an attribute in the component class to refer to this identifier (slide 35)
     - write in the component method `ngAfterViewInit` an Interacto button binder. 
     On: https://interacto.github.io/ click on the `How to start` button to have an example. 
-    You have to use the `buttonPress()` binder (the `Interactions`).
+    You have to use the `buttonBinder()` binder (the `Interactions`).
     <br/>
     This binder can use the predefined `AnonCmd` to set the text of `DataService` to ''.
     On the Interacto web page, click on the button `Commands/Undo` and scroll down to access the *Anonymous command* example. 
